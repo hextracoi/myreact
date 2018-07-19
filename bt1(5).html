@@ -1,0 +1,62 @@
+
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+            $("#nt").click(function(){
+                $("p").prepend("<b>Prepended text</b>.");
+
+            });
+            $("#bt").click(function(){
+                $("ol").prepend("<b>Prepended item</b>).");
+            });
+            $("#ac").click(function(){
+                $(".selector").removeClass();
+            });
+            $("#ec").click(function(){
+                $("p").remove();
+            });
+            $("#cc").click(function(){
+            $("p").html("<span style='color: green;'>Hi there!</span>");
+        });
+            $("#br").click(function(){
+                $("li").text("<span style='color: green;'>Hi there!</span>");
+        });
+            $("#ak").click(function(){
+                $("h1").append("<span style='color: green;'>Hi there!</span>");
+        });
+            $("#rr").click(function(){
+                $("p").attr("disabled" , true);
+        });
+    });
+        </script>
+        
+    </head>
+    <body>
+    <div class="selector">
+        <p>This is a paragrap</p>
+        <p>This is another paregraph</p>
+        <p>hello</p>
+        <p>hello</p>
+        <p>hello</p>
+        <p>hello</p>
+        <p>hello</p>
+        <h1>Fuck</h1>
+
+        <ol>
+            <li>list item</li>
+                <li>List item 2</li>
+                <li>List item 3</li>
+        </ol>
+    </div>
+        <button id="nt">click</button>
+        <button id="ac" >accc</button>
+        <button id="bt">list</button>
+        <button id="ec">ecc</button>
+        <button id="cc">CCC</button>
+        <button id="br">BR</button>
+        <button id="ak">AK</button>
+        <button id="rr">RR</button>
+    </body>
+</html>
